@@ -73,9 +73,9 @@ int main()
 
     char trame[6] = {'a', 'b', 'c', 'd', 'e', 'f'};
     double freq[6] = {5, 3, 7, 1, 10, 2};
+
     cHuffman ARBRE(6, trame, freq);
 
-    double newtrame[6];
 
 
 

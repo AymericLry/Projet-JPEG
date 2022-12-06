@@ -9,9 +9,9 @@ const unsigned taille = 8;
 
 class cCompression
 {
-    unsigned int mLargeur;  //La largeur de l'image
-    unsigned int mHauteur;  //La hauteur de l'image
-    unsigned int **mBuffer;    //L'image
+    unsigned int mLargeur;      //La largeur de l'image
+    unsigned int mHauteur;      //La hauteur de l'image
+    unsigned int **mBuffer;     //L'image
     unsigned int mQualite;      //Qualité de la compression (0 à 100) 50 par défaut
     int Q[taille][taille] = {
                                 { 16, 11, 10, 16, 24,  40,  51,  61  },
@@ -453,6 +453,9 @@ class cCompression
                 }
             }
         }
+
+        //unsigned int Histogramme(char* Trame, unsigned int Longueur_Trame, char* Donne, double* Frequence)
+
 
         template <typename T>
         //! Fonction affichage des images
